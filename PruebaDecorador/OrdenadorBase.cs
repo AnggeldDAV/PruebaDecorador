@@ -25,7 +25,7 @@ namespace PruebaDecorador
             this.PC = pc;
         }
         public decimal Precio { get { return this.PC.Precio + 200; } set { } }
-        public int Ram { get { return this.PC.Ram = 100; } set { } }
+        public int Ram { get; set; } = 100;
         public int Almacenamiento { get { return this.PC.Almacenamiento; } set { } }
         public override string ToString()
         {
